@@ -22,12 +22,12 @@ if ( post_password_required() ) {
 
 	<?php if ( have_comments() ) : ?>
 
-	<h2 class="comments-title">
+	<h5 class="comments-title">
 		<?php
 			printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'twentyfourteen' ),
 				number_format_i18n( get_comments_number() ), get_the_title() );
 		?>
-	</h2>
+	</h5>
 
 	<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 	<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
@@ -61,6 +61,19 @@ if ( post_password_required() ) {
 
 	<?php endif; // have_comments() ?>
 
-	<?php comment_form(); ?>
+	<h5>Leave a Reply</h5>
+
+		<p class="comment-form-comment">
+		<textarea id="comment" name="comment" cols="45" rows="8" class="blog-comment" aria-required="true"></textarea></p>
+		<p class="form-submit">
+			<input name="submit" type="submit" id="submit" class="submit" value="Post Comment">
+			<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+		</p>
 
 </div><!-- #comments -->
+
+
+
+
+
+

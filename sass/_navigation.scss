@@ -1,14 +1,39 @@
+
+h3.menu-btn {
+	transform: rotate(90deg);
+	position: absolute;
+	left: 50px;
+    top:  104px;
+}
+
+header.slideNav {
+	position: fixed;
+	width: 30%;
+	left: -30%;
+	transition: all 0.5s;
+}
+
+header.slideNavOpen {
+	left: 0;
+}
+
+
 ul.menu {
+	position: fixed;
 	margin: 0;
 	padding: 0;
+	padding-top: 400px;
+	width: 100%;
 	li {
-		display: inline;
+		display: block;
 		margin-right: 10px;
+		line-height: 30px;
+		letter-spacing: 2px;
+
 		a {
 			color: #333;
-			padding: 10px;
-			background: #333;
-			color: white;
+			padding-left: 60px;
+			color: black;
 		}
 	}
 }

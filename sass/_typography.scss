@@ -1,8 +1,68 @@
+// Main titles
+
+h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 42px;
+	padding-left: 700px;
+}
+
+h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: uppercase;
+	margin-top: 25px;
+	font-size: 32px;
+	padding-left: 700px;
+}
+
+// nav
+
+.menu {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 900;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+pre {
+	font-family: 'Anonymous Pro', ;
+	line-height: 1.5;
+	font-size: 14px;
+}
+
+h3 {
+	line-height: 1.5;
+	font-family: 'Anonymous Pro', ;
+	font-size: 12px;
+}
+
+h4 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 32px;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.submit {
+	line-height: 1.5;
+	font-family: 'Anonymous Pro', ;
+	font-size: 10px;
+
+}
+
+
 a {
-	color: #BA209B;
+	color: black;
 	text-decoration: none;
 	&:hover {
-		color: #D424B1;
+		color: grey;
+		cursor: pointer;
 	}
 }
 
@@ -10,6 +70,8 @@ a {
 
 p {
 	line-height: 1.5;
+	font-family: 'Anonymous Pro', ;
+	font-size: 12px;
 }
 
 /*blockquotes*/

@@ -1,3 +1,14 @@
+
 footer {
-	clear: both;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: white;
+	text-align: right;
+	padding-right: 80px;
+	padding-bottom: 5px;
+
+		p {
+			margin: 0;
+		}
 }
