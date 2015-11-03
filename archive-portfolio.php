@@ -2,6 +2,9 @@
 
 <?php 
 
+/*
+  Template Name: Portfolio Archive
+*/
 get_header(); ?>
 
 <div class="main">
