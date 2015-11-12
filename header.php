@@ -7,12 +7,15 @@
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <link href='https://fonts.googleapis.com/css?family=Anonymous+Pro|Source+Sans+Pro:400,900' rel='stylesheet' type='text/css'>
+  
 
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
   <?php wp_head(); ?>
 </head>
+<!-- 
+favicon/image white square courtesy of Wayne Tyler Sall from The Noun Project -->
 
 
 <body <?php body_class(); ?>>

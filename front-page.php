@@ -6,7 +6,7 @@
     <div class="content">
       <h3 class="menu-btn"><a href="#">Menu</a></h3>
 
-      <h1>
+      <h1 class="homeTitle">
           <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
             <?php bloginfo( 'name' ); ?>
           </a>
@@ -14,7 +14,7 @@
       
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-        <?php the_post_thumbnail(array (850, 600)); ?>
+       <div class="featured-image"> <?php the_post_thumbnail('full'); ?></div>
         
 
         <?php the_content(); ?>

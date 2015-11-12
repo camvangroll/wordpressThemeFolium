@@ -27,7 +27,7 @@
 		
 
 			<div class="blog">
-				<div class="blog-img"><?php the_post_thumbnail(array (600,400)); ?></div>
+				<div class="blog-img"><?php the_post_thumbnail("small"); ?></div>
 
 
 			<section class="entry-content">

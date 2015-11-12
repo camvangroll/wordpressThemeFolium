@@ -7,9 +7,9 @@
       <h3 class="menu-btn"><a href="#">Menu</a></h3>
       <?php // Start the loop ?>
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-        <h1><?php the_title(); ?></h1>
+        <h1 class="secondTitle"><?php the_title(); ?></h1>
 
-       <div class="page"> <?php the_post_thumbnail("medium"); ?></div>
+       <div class="about-contact"> <?php the_post_thumbnail('small'); ?></div>
        <div class="text"> <?php the_content(); ?></div>
 
 

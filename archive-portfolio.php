@@ -19,7 +19,7 @@ get_header(); ?>
 
           <div class="portfolio-piece">
             <h4><?php the_title(); ?></h4>
-              <?php the_post_thumbnail("medium"); ?>
+         <?php the_post_thumbnail("medium"); ?>
             <p><?php the_excerpt(); ?> </p>
           </div>
 

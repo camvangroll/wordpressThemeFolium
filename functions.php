@@ -1,6 +1,8 @@
 <?php
 
 show_admin_bar( false );
+
+
 /** Tell WordPress to run theme_setup() when the 'after_setup_theme' hook is run. */
 
 if ( ! function_exists( 'theme_setup' ) ):
@@ -267,3 +269,12 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+
+add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10, 3 );
+
+function remove_thumbnail_dimensions( $html, $post_id, $post_image_id ) {
+    $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
+    return $html;
+}
+
+

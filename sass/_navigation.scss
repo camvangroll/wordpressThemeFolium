@@ -20,6 +20,7 @@ header.slideNavOpen {
 
 ul.menu {
 	position: fixed;
+	z-index: 99999999;
 	margin: 0;
 	padding: 0;
 	padding-top: 400px;

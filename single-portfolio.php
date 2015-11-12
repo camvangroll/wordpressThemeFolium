@@ -14,8 +14,8 @@
 
  	    	<h2><?php the_title(); ?></h2>
 
- 	    	<div class="page">
-	 	    	<?php the_post_thumbnail(array (600,400)); ?>
+ 	    	<div class="singlePortfolio">
+	 	    	<?php the_post_thumbnail('small'); ?>
 			   <div class="photo-description"> <?php the_content(); ?></div>
 			    <?php endwhile; ?>
 		    </div>
